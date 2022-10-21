@@ -1,0 +1,57 @@
+.Form3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    font-family: 'Inter', sans-serif;
+}
+.Form3 .input5 input{
+    display: none;
+}
+.Form3 .input5 label{
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0 10px;
+    height: 150px;
+    width: 140px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+.Form3 .input5 label.active{
+    border: 1px solid #751aff;
+}
+.Form3 .input5 label .contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 10px;
+}
+.Form3 .input5 label .contents .icon{
+    font-size: 20px;
+}
+.Form3 .input5 label .contents .icon.highlight{
+    color: #751aff;
+}
+.Form3 .input5 label .contents h3{
+     font-size: 13px;
+}
+.Form3 .input5 label .contents p{
+    margin-top: -5px;
+    font-size: 12px;
+}
+
+@media(max-width:470px){
+    .Form3 .input5 label{
+        margin: 0 5px;
+        padding: 0 0px;
+        width: 120px;
+        height: 134px;
+    }
+    .Form3 .input5 label .contents p{
+        margin-top: -5px;
+        font-size: 10px;
+    }
+}

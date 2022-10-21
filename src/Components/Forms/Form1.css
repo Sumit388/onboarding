@@ -1,0 +1,33 @@
+.Form1 .input1,.Form1 .input2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 15px;
+}
+.Form1 .input1 input, .Form1 .input2 input{
+    width: 345px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.Form1 .input1 label, .Form1 .input2 label{
+    padding: 5px 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    height: 20px;
+}
+
+@media(max-width:470px){
+    .Form1 .input1 input, .Form1 .input2 input{
+        width: 250px;
+    }
+}

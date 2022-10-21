@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700&family=Poppins:ital,wght@0,200;0,400;1,400&display=swap');
+.Headings{
+    padding: 0;
+    margin: 0;
+    margin-top: 70px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Headings h4{
+    margin: 5px;
+    font-size: 28px;
+    font-weight: 700;
+}
+.Headings p{
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 550;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+@media(max-width:470px){
+    .Headings h4{
+        font-size: 15px;
+    }
+    .Headings p{
+        margin: 5px;
+        font-size: 12px;
+        text-align: center;
+    }
+}

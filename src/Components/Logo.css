@@ -1,0 +1,13 @@
+.Logo{
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-10px);
+    font-size: 13px;
+    margin-bottom: 40px;
+}
+.Logo h1{
+    margin-left: -2px;
+}

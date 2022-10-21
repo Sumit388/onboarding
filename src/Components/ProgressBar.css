@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Poppins:ital,wght@0,200;0,400;1,400&display=swap');
+
+.ProgressBar{
+    font-family: 'Inter', sans-serif;
+    margin:0;
+    padding:0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:300px;
+    min-height: 32px !important;
+    overflow: hidden;
+}
+.ProgressBar::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.1);
+    top:50%;
+    left:0;
+    border-radius: 5px;
+    height: 1px;
+    width: 100%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.ProgressBar .progressLine{
+    position: absolute;
+    background-color: #751aff;
+    top:50%;
+    left: 0;
+    border-radius: 5px;
+    height: 1px;
+    width: 50%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+.ProgressBar .circle{
+    background-color: #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0,0.1);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+.ProgressBar .circle.active{
+    background-color: #751aff;
+    color: #fff;
+}
+
+
+@media(max-width:470px){
+    .ProgressBar{
+        width:250px;
+    }
+}

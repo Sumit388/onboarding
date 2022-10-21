@@ -1,0 +1,71 @@
+.Form2 .input3,.Form2 .input4 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 15px;
+}
+.Form2 .input3 input{
+    width: 345px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.Form2 .input4 .spanInput{
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.Form2 .input4 .spanInput input{
+    height: 35px;
+    padding-left: 15px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.Form2 .input4 .spanInput #GeneralURL{
+    width: 115px;
+    background: rgba(15, 20, 73, 0.02);
+    border: none;
+}
+.Form2 .input4 .spanInput #WorkspaceURL{
+    width: 215px;
+    border: none;
+}
+.Form2 .input3 label, .Form2 .input4 label{
+    padding: 5px 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+
+.Form2 .input4 label p{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.2);
+    padding-left: 3px;
+}
+
+@media(max-width:470px){
+    .Form2 .input3 input{
+        width: 250px;
+    }
+    .Form2 .input4 .spanInput #GeneralURL{
+        width: 105px;
+    }
+    .Form2 .input4 .spanInput #WorkspaceURL{
+        width: 126px;
+    }
+
+}
