@@ -1,19 +1,23 @@
-import React ,{useContext}from 'react'
+import React, { useContext } from 'react'
 import "./Headings.css"
+
+//Importing progress context so that different heading can be displayed according to what progress is.
 import { Progress } from '../Data/Context';
 
-function Headings() {
-    const context=useContext(Progress);
-    const progress=context.progress;
+//Heading text is the array of objects containing all the headings that needs to be displayed.
+import { HeadingText } from '../Data/data';
 
-    const val = [{ heading: "Welcome! First things first...", para: "You can always change them later." },
-                  {heading: "Let's set up a home for all your work", para: "You can always create another workspace later."},
-                 {heading: "How are you planning to use Eden?", para: "We'll streamline your setup experience accordingly."},
-                 {heading:"Congratulations, Eren!", para: "You have completed onboarding, you can start using Eden!"}]
+
+
+function Headings() {
+    const context = useContext(Progress);
+    const progress = context.progress;
+
     return (
         <div className="Headings">
-            <h4>{val[progress-1].heading}</h4>
-            <p>{val[progress-1].para}</p>
+            {/*displaying heading according to what is progres is*/}
+            <h4>{HeadingText[progress - 1].heading}</h4>
+            <p>{HeadingText[progress - 1].para}</p>
         </div>
     )
 }
